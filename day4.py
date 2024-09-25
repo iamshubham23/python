@@ -24,15 +24,15 @@
 
 
 #you are going to write a program which will select a random name from a list of names.the person selected will have to pay everybody's bill
-import random
-test_seed=int(input("create a seed number:"))
-random.seed(test_seed)
-namesAsCSV=input("give me everybodys name,separated by comma")
-names=namesAsCSV.split(", ")
-num_items=len(names)
-random_choice=random.randint(0,num_items - 1)
-person_who_will_pay=names[random_choice]
-print(person_who_will_pay+" is going to buy the meal")
+# import random
+# test_seed=int(input("create a seed number:"))
+# random.seed(test_seed)
+# namesAsCSV=input("give me everybodys name,separated by comma")
+# names=namesAsCSV.split(", ")
+# num_items=len(names)
+# random_choice=random.randint(0,num_items - 1)
+# person_who_will_pay=names[random_choice]
+# print(person_who_will_pay+" is going to buy the meal")
 
 
 #WAP for selection of random food out of some food
@@ -62,19 +62,20 @@ print(person_who_will_pay+" is going to buy the meal")
 
 
 #Rock,Paper,Scissor Game
-# import random
-# user_choice=int(input("what do you choose? Type 0 for rock,1 for paper,2 for scissors:"))
-# computer_choice=random.randint(0,2)
-# print(f"computer choice{computer_choice}")
-# if user_choice>2 or user_choice<0:
-#     print("you typed invalid you loose")   
-# elif user_choice==0 and computer_choice==2:
-#     print("you win")
-# elif computer_choice==0 and user_choice==2:
-#     print("you loose")
-# elif computer_choice >user_choice:
-#     print("you loose")
-# elif user_choice > computer_choice:
-#     print("you win")
-# elif computer_choice==user_choice:
-#    print("draw")
+import random
+user_choice=int(input("what do you choose? Type 0 for rock,1 for paper,2 for scissors:"))
+computer_choice=random.randint(0,2)
+print(f"computer choice{computer_choice}")
+if user_choice>2 or user_choice<0:
+    print("you typed invalid you loose")   
+elif user_choice==0 and computer_choice==2:
+    print("you win")
+elif computer_choice==0 and user_choice==2:
+    print("you loose")
+elif computer_choice >user_choice:
+    print("you loose")
+elif user_choice > computer_choice:
+    print("you win")
+elif computer_choice==user_choice:
+   print("draw")
+
