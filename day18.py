@@ -2,12 +2,12 @@
 # timmy_the_turtle= Turtle()
 # timmy_the_turtle.shape("turtle")
 # timmy_the_turtle.color("NavyBlue")
-#timmy_the_turtle.circle(20)
+# timmy_the_turtle.circle(20)
 # timmy_the_turtle.forward(99)
 # #timmy_the_turtle.right(90)
 
 # for _ in range(4):
-#timmy_the_turtle.forward(10)
+#     timmy_the_turtle.forward(10)
 #     timmy_the_turtle.right(90)
 
 # for _ in range(0,15):
@@ -83,27 +83,27 @@
 
 
 #Make a Spirograph
-# import turtle as t
-# import random
-# timm=t.Turtle()
-# t.colormode(255)
-# timm.shape("turtle")
-# def random_color():
-#     r=random.randint(0,255)
-#     g=random.randint(0,255)
-#     b=random.randint(0,255)
-#     color=(r,g,b)
-#     return color
-# timm.speed("fastest")
-# def draw_spirograph(size_of_gap):
-#     for _ in range(int(360/size_of_gap)):
-#         timm.circle(100)
-#         timm.setheading(timm.heading()+ size_of_gap)
-#         timm.color(random_color())
+import turtle as t
+import random
+timm=t.Turtle()
+t.colormode(255)
+timm.shape("turtle")
+def random_color():
+    r=random.randint(0,255)
+    g=random.randint(0,255)
+    b=random.randint(0,255)
+    color=(r,g,b)
+    return color
+timm.speed("fastest")
+def draw_spirograph(size_of_gap):
+    for _ in range(int(360/size_of_gap)):
+        timm.circle(100)
+        timm.setheading(timm.heading()+ size_of_gap)
+        timm.color(random_color())
         
-# draw_spirograph(5)    
-# screen=t.Screen()
-# screen.exitonclick()
+draw_spirograph(5)    
+screen=t.Screen()
+screen.exitonclick()
 
 # import colorgram
 # rgb_colors=[]
@@ -117,26 +117,26 @@
 # print(rgb_colors)
 
 
-import turtle as turtle_module
-import random
-turtle_module.colormode(255)
-import random
-timm=turtle_module.Turtle()
-colors_list=[(229, 228, 227), (226, 224, 225), (198, 175, 119), (125, 36, 23), (187, 157, 50), (170, 104, 56), (5, 56, 83), (201, 216, 205), (109, 67, 85), (39, 35, 34), (223, 224, 227), (84, 141, 61), (20, 122, 175), (111, 161, 176), (75, 38, 48), (8, 67, 47)]
-timm.speed("fastest ")
-timm.setheading(225)
-timm.forward(300)
-timm.setheading(0)
-number_of_dots=100
-for dot_count in range(1,number_of_dots+1):
-    timm.dot(20,random.choice(colors_list))
-    timm.forward(50)
-    if dot_count %10==0:
-        timm.setheading(90)    
-        timm.forward(50)
-        timm.setheading(180)
-        timm.forward(500)
-        timm.setheading(0)
+# import turtle as turtle_module
+# import random
+# turtle_module.colormode(255)
+# import random
+# timm=turtle_module.Turtle()
+# colors_list=[(229, 228, 227), (226, 224, 225), (198, 175, 119), (125, 36, 23), (187, 157, 50), (170, 104, 56), (5, 56, 83), (201, 216, 205), (109, 67, 85), (39, 35, 34), (223, 224, 227), (84, 141, 61), (20, 122, 175), (111, 161, 176), (75, 38, 48), (8, 67, 47)]
+# timm.speed("fastest ")
+# timm.setheading(225)
+# timm.forward(300)
+# timm.setheading(0)
+# number_of_dots=100
+# for dot_count in range(1,number_of_dots+1):
+#     timm.dot(20,random.choice(colors_list))
+#     timm.forward(50)
+#     if dot_count %10==0:
+#         timm.setheading(90)    
+#         timm.forward(50)
+#         timm.setheading(180)
+#         timm.forward(500)
+#         timm.setheading(0)
 
-screen=turtle_module.Screen()
-screen.exitonclick()
+# screen=turtle_module.Screen()
+# screen.exitonclick()
