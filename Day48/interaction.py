@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 chrome_driver_path=r"C:\webdriver\chromedriver-win64\chromedriver.exe"
 service=Service(executable_path=chrome_driver_path)
 driver=webdriver.Chrome(service=service)
-driver.get("https://en.wikipedia.org/wiki/Main_Page")
+# driver.get("https://en.wikipedia.org/wiki/Main_Page")
 # numbers=driver.find_element(By.CSS_SELECTOR,"#articlecount a ")
 # print(number[0].text)
 # article_count_element = driver.find_element(By.CSS_SELECTOR, "#articlecount")
